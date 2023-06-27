@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 import { technology } from "../data/technology";
 import { projects } from "../data/projects";
 import { projects3d } from "../data/3d";
+import Footer from "../components/Footer";
+import DescargarCV from "../components/DescargarCV";
 
 export function LandingPage() {
 
@@ -34,6 +36,7 @@ export function LandingPage() {
               <div className="flex justify-center lg:justify-start mt-3 lg:mt-6">
                 <Icons></Icons>
               </div>
+              
             </div>
             <div className="imagesMain w-full lg:w-auto mt-4 lg:mt-0">
               <div className="circleLanding mx-auto w-80 h-80 lg:h-96 lg:w-96 rounded-full">
@@ -54,16 +57,16 @@ export function LandingPage() {
         </Typography>
         <div className="flex gap-24 overflow-x-scroll my-9 px-6 py-10 carouselTecnlogias">
           {technology.map((tecn, key) => (
-            <div className="w-60 h-w-60" key={key}>
+            <div className="w-60 h-60" key={key}>
               <Tooltip content={`Nivel: ${tecn.level}`}>
-                <figure className="mx-auto lg:w-32 lg:h-32 text-white">
+                <figure className="mx-auto h-20 w-20 lg:w-32 lg:h-32 text-white">
                   <img src={`${tecn.logo}`} alt="" className="w-full h-full" />
                 </figure>
               </Tooltip>
 
               <Typography
                 variant="paragraph"
-                className="text-center font-semibold"
+                className="text-xs lg:text-base text-center font-semibold"
               >
                 {tecn.name}
               </Typography>
@@ -112,6 +115,8 @@ export function LandingPage() {
           </div> */}
         </div>
       </section>
+
+      <Footer></Footer>
     </>
   );
 }

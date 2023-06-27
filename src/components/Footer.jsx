@@ -1,24 +1,66 @@
 import React from "react";
+import { Button, Typography } from "@material-tailwind/react";
+import { Icons } from "./Icons";
+import "../css/Footer.css";
+import DescargarCV from "./DescargarCV";
 
 function Footer() {
   return (
-    <footer className="p-5">
-      <div className="flex flex-col items-center gap-3 md:flex-row md:justify-between">
-        <p className="font-semibold">Oliver Rodríguez Frontend Developer</p>
-        <div className="flex gap-5">
-          <a
-            href="https://www.instagram.com/oarn_09/"
-            className="instagram w-8 h-8 bg-[url('/instagram_icon.png')] block bg-cover bg-center hover:border-b-2"
-            target={"_blank"}
-          ></a>
-          <a
-            href="https://mobile.twitter.com/Oliverantonio09"
-            className="twitter w-8 h-8 bg-[url('/twitter_icon.png')] block bg-cover bg-center hover:border-b-2"
-            target={"_blank"}
-          ></a>
-          <a href="https://github.com/oliverrod09" target={"_blank"} className="twitter w-8 h-8 bg-[url('/github_icon.png')] block bg-cover bg-center hover:border-b-2"></a>
+    <footer className="w-full  p-8 footer">
+      <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
+        <DescargarCV></DescargarCV>
+        <div className="flex flex-col gap-2 lg:flex-row lg:gap-10 items-center">
+          <Typography className="font-medium text-lg text-black">Redes:</Typography>
+          <Icons></Icons>
+          {/* <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+          <li>
+            <Typography
+              as="a"
+              href="#"
+              color="blue-gray"
+              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+            >
+              About Us
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              as="a"
+              href="#"
+              color="blue-gray"
+              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+            >
+              License
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              as="a"
+              href="#"
+              color="blue-gray"
+              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+            >
+              Contribute
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              as="a"
+              href="#"
+              color="blue-gray"
+              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+            >
+              Contact Us
+            </Typography>
+          </li>
+        </ul> */}
         </div>
+        
       </div>
+      <hr className="my-8 border-black" />
+      <Typography color="blue-gray" className="text-center font-bold">
+        &copy; Oliver Rodríguez 2023
+      </Typography>
     </footer>
   );
 }
