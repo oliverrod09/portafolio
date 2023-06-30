@@ -21,7 +21,7 @@ export function LandingPage() {
       <Nav></Nav>
       <main className="w-full relative pb-32 lg:pb-0 ">
         <div className="landingMain mx-auto max-w-screen-lg h-screen flex items-center justify-center lg:block py-12 dark:bg-black">
-          <div className="contentMain flex flex-col items-center lg:flex-row justify-around">
+          <div className="contentMain flex flex-col items-center lg:flex-row justify-around xl:mt-10vh">
             <div className="paragraphMain flex flex-col justify-center">
               <Typography variant="h1" color="blue-gray" className="mb-2">
                 Oliver Rodríguez

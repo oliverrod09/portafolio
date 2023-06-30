@@ -9,6 +9,7 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import DescargarCV from "./DescargarCV";
  
 export function Nav() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -28,7 +29,7 @@ export function Nav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to={"/"} className="flex items-center">
+        <Link to={"/"} className="flex items-center uppercase font-semibold tracking-wide hover:tracking-widest hover:text-blue-gray-900/80 hover:border-b-2 duration-100">
           Inicio
         </Link>
       </Typography>
@@ -38,7 +39,7 @@ export function Nav() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to={"/about"} className="flex items-center">
+        <Link to={"/about"} className="flex items-center uppercase font-semibold tracking-wide hover:tracking-widest hover:text-blue-gray-900/80 hover:border-b-2 duration-100">
           Acerca De
         </Link>
       </Typography>
@@ -74,13 +75,7 @@ export function Nav() {
           </Link>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
-            <Button
-              variant="gradient"
-              size="sm"
-              className="hidden lg:inline-block"
-            >
-              <span>Buy Now</span>
-            </Button>
+            <a href="/pdf/cv.pdf" className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg text-white shadow-md hover:shadow-lg bg-black hover:shadow-[#000000]/40 shadow-[#000000]/20 active:opacity-[0.85] hidden lg:inline-block">Descargar CV</a>
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -122,9 +117,10 @@ export function Nav() {
         </div>
         <Collapse open={openNav}>
           {navList}
-          <Button variant="gradient" size="sm" fullWidth className="mb-2">
+          <a href="/pdf/cv.pdf" className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg  text-white shadow-md shadow-blue-500/20 hover:shadow-lg bg-black hover:shadow-[#000000]/40 active:opacity-[0.85] block w-full mb-2">Descargar CV</a>
+          {/* <Button variant="gradient" size="sm" fullWidth className="mb-2">
             <span>Buy Now</span>
-          </Button>
+          </Button> */}
         </Collapse>
       </Navbar>
     </>

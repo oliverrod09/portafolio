@@ -11,7 +11,7 @@ export function Project3D() {
   return (
     <>
     <Nav></Nav>
-    <div className='bg-[url(/svg/fondo2.svg)] bg-no-repeat bg-cover'>
+    <div className='bg-[url(/svg/fondo2.svg)] bg-no-repeat bg-cover bg-center'>
       <div className='projectMain mx-auto w-3/4 max-w-screen-lg h-screen flex items-center justify-center lg:block py-12 dark:bg-black'>
         <ModelVIewer project={project}></ModelVIewer>
       </div>
