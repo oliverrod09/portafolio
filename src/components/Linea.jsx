@@ -24,15 +24,14 @@ export default function Linea() {
                   size="sm"
                   src={exp.img}
                   alt="user 1"
-                  withBorder
                 />
               </TimelineIcon>
-              <Typography variant="h5" color="blue-gray" className="">
+              <Typography variant="h5" className="text-blue-gray-900 dark:text-white">
                 {exp.name}
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
-              <Typography color="gary" className="font-normal text-gray-600">
+              <Typography className="font-normal text-gray-600 dark:text-blue-gray-100">
                 {exp.description}
               </Typography>
               <Button onClick={()=>{window.open(exp.link)}} className="bg-[#FFEB02] text-black shadow-[#FFEB02]/20 hover:shadow-[#FFEB02]/40 mt-4">Ver</Button>

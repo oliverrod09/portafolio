@@ -6,11 +6,11 @@ import DescargarCV from "./DescargarCV";
 
 function Footer() {
   return (
-    <footer className="w-full  p-8 footer">
+    <footer className="w-full  p-8 footer" id="contactar">
       <div className="flex flex-col lg:flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
         <DescargarCV></DescargarCV>
         <div className="flex flex-col gap-2 lg:flex-row lg:gap-10 items-center">
-          <Typography className="font-medium text-lg text-black">Redes:</Typography>
+          <Typography className="font-medium text-lg text-black">Contactar:</Typography>
           <Icons></Icons>
           {/* <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>
