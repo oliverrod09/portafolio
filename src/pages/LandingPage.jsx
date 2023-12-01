@@ -15,13 +15,13 @@ import DescargarCV from "../components/DescargarCV";
 export function LandingPage() {
 
   const filtProjects = projects.slice(0, 3)
-  const filtProjects3d = projects3d.slice(0, 4)
+  const filtProjects3d = projects3d.slice(0, 3)
   return (
     <>
       <Nav></Nav>
       <main className="w-full relative pb-32 lg:pb-0 dark:bg-[#02060e]">
-        <div className="landingMain mx-auto max-w-screen-lg h-screen flex items-center justify-center lg:block py-12">
-          <div className="contentMain flex flex-col items-center lg:flex-row justify-around xl:mt-10vh">
+        <div className="landingMain mx-auto max-w-screen-lg h-screen flex items-center justify-center pb-[300px] py-12">
+          <div className="contentMain flex flex-col items-center gap-14 lg:flex-row justify-around xl:mt-10vh">
             <div className="paragraphMain flex flex-col justify-center">
               <Typography variant="h1" color="blue-gray" className="mb-2 dark:text-white text-center lg:text-start">
                 Oliver Rodríguez
@@ -29,7 +29,7 @@ export function LandingPage() {
               <Typography
                 variant="lead"
                 color="blue-gray"
-                className="mb-2 text-center tracking-wider dark:text-blue-gray-100"
+                className="mb-2 text-center lg:text-start tracking-wider dark:text-blue-gray-100"
               >
                 I'm Frontend Developer
               </Typography>
@@ -53,7 +53,7 @@ export function LandingPage() {
       </main>
       <section className="bg-[#FFEB02] py-16">
         <Typography variant="h2" className="text-center lg:text-5xl">
-          Tecnologias
+        Tecnologías
         </Typography>
         <div className="flex gap-24 overflow-x-scroll my-9 px-6 py-10 carouselTecnlogias">
           {technology.map((tecn, key) => (
@@ -87,11 +87,11 @@ export function LandingPage() {
               ))
             }
           </div>
-          {/* <div className="flex justify-center py-20">
-            <Link to={"/about"}>
+          <div className="flex justify-center py-20">
+            <Link to={"/projects"}>
               <Button className="bg-[#FFEB02] text-black shadow-[#FFEB02]/20 hover:shadow-[#FFEB02]/40">Más Proyectos</Button>
             </Link>
-          </div> */}
+          </div>
         </div>
         <div className="landingSvg1 separatorSvgBottom"></div>
       </section>
@@ -108,11 +108,11 @@ export function LandingPage() {
               ))
             }
           </div>
-          {/* <div className="flex justify-center py-20">
-            <Link to={"/about"}>
+          <div className="flex justify-center py-20">
+            <Link to={"/projects3D"}>
               <Button className="bg-[#FFEB02] text-black shadow-[#FFEB02]/20 hover:shadow-[#FFEB02]/40">Más Proyectos</Button>
             </Link>
-          </div> */}
+          </div>
         </div>
       </section>
 

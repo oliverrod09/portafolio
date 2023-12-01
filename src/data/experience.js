@@ -4,7 +4,7 @@ export const experience = [
       categorie: "Estudios",
       img: "/images/experience/iptch.jpg",
       name: "Instituto Profesional y Técnico de La Chorrera",
-      description: "Estudie en el Instituto Profesional y Técnico de La Chorrera del 2016 al 2018 donde me gradue de Bachiller en Electronica, tambien forme parte del club de debate de la escuela donde fui presidente",
+      description: "Estudie en el Instituto Profesional y Técnico de La Chorrera del 2016 al 2018 donde me gradue de bachiller en electrónica, tambien forme parte del club de debate de la escuela donde fui presidente",
       link: "https://www.instagram.com/iptch/"
     },
     {
@@ -18,7 +18,7 @@ export const experience = [
       categorie: "Laboral",
       img: "/images/experience/digitalithings.png",
       name: "Digitalithings",
-      description: "Trabaje como Frontend Developer en una pequeña empresa de digitalización en la cual tenia asignaciones de Fullstack dependiendo de lo que se necesitara.",
+      description: "Trabajé como Frontend Developer en una pequeña empresa de digitalización en la cual tenía asignaciones de Fullstack dependiendo de lo que se necesitara.",
       link: "https://www.instagram.com/digitalithings_/"
     }
   ]

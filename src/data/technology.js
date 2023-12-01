@@ -8,7 +8,7 @@ export const technology = [
     },
     {
       name: "Express js",
-      level: "Basico",
+      level: "Medio",
       color: "#FFEB02",
       logo: "/svg/iconsSvg/express.svg",
     },

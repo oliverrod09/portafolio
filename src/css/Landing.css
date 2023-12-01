@@ -42,7 +42,7 @@ html{
 
 .carouselTecnlogias::-webkit-scrollbar {
     width: 5px;
-    height: 3px;
+    height: 10px;
   }
 
   /* Estilos para el fondo de la barra de desplazamiento */
